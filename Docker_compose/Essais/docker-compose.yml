@@ -1,0 +1,22 @@
+version: '2.1'
+
+services:
+  ubuntu:
+    image: dir:MonUbuntu01
+    container_name: UbuntuTest01
+    network_mode: host 
+    command: /bin/bash -c "ping 127.0.0.1"
+    #  /bin/bash -c "apt -y update"
+    #  /bin/bash -c "apt install -y iputils-ping"
+    #  /bin/bash -c "ping 127.0.0.1" 
+    #bash:
+    #  entrypoint: /bin/bash
+    #entrypoint:
+    #- /bin/bash
+    #- -c
+    volumes:
+      - /path/to/library:/config
+      - /path/to/tvseries:/tv
+      - /path/to/movies:/movies
+    ports:
+      - "34200:34200/tcp"

@@ -1,0 +1,38 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Instructions de bases : 
+\fs24 \cb1 \
+
+\fs32 \cb3 FROM permet de d\'e9finir depuis quelle base votre image va \'eatre cr\'e9\'e9e LABEL maintainer permet de d\'e9finir l\'92auteur de l\'92image 
+\fs24 \cb1 \
+
+\fs32 \cb3 RUN permet de lancer une commande, mais aura aussi pour effet de cr\'e9er une image interm\'e9diaire. 
+\fs24 \cb1 \
+
+\fs32 \cb3 ADD permet de copier un fichier depuis la machine h\'f4te ou depuis une URL EXPOSE permet d\'92exposer un port du container vers l\'92ext\'e9rieur 
+\fs24 \cb1 \
+
+\fs32 \cb3 CMD d\'e9termine la commande qui sera ex\'e9cut\'e9e lorsque le container d\'e9marrera 
+\fs24 \cb1 \
+
+\fs32 \cb3 ENTRYPOINT permet d\'92ajouter une commande qui sera ex\'e9cut\'e9e par d\'e9faut WORKDIR permet de d\'e9finir le dossier de travail pour toutes les autres 
+\fs24 \cb1 \
+
+\fs32 \cb3 commandes (par exemple RUN, CMD, ENTRYPOINT et ADD) 
+\fs24 \cb1 \
+
+\fs32 \cb3 ENV permet de d\'e9finir des variables d\'92environnements qui pourront ensuite \'eatremodifi\'e9esgr\'e2ceauparam\'e8tredelacommande 
+\fs26\fsmilli13333 run --env <key>= <value> 
+\fs24 \cb1 \
+
+\fs32 \cb3 VOLUMES permet de cr\'e9er un point de montage qui permettra de persister les donn\'e9es. On pourra alors choisir de monter ce volume dans un dossier sp\'e9cifiqueenutilisantlacommande 
+\fs26\fsmilli13333 run -v 
+\fs24 \cb1 \
+}

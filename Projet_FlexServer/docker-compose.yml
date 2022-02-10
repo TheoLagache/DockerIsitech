@@ -1,0 +1,19 @@
+version: "2.1"
+ 
+services:
+  plex:
+    image: linuxserver/plex
+    container_name: PlexServer01
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - VERSION=docker
+      - PLEX_CLAIM= #optional
+    volumes:
+      - /path/to/library:/config
+      - /path/to/tvseries:/tv
+      - /path/to/movies:/movies
+    ports:
+      - "34200:34200/tcp"
+    restart: unless-stopped
